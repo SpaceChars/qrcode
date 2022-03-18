@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="jquery-2.1.0.js"></script>
+		<script src="jquery.qrcode.min.js"></script>
+		<title>优化qrcode.min.js中文乱码的解决方案</title>
+	</head>
+	<body>
+		<div class="output"></div>
+		<script>
+			$(function() {
+				$(".output").qrcode("http://中文中文");
+			})
+		</script>
+	</body>
+</html>
